@@ -1,0 +1,71 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Doctor Appointment</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            text-align: center;
+        }
+
+        .container {
+            width: 400px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h1 {
+            color: #2196F3;
+        }
+
+        input, select, button {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            background: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            color: green;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🩺 Doctor Appointment</h1>
+
+    <input type="text" id="name" placeholder="Patient Name">
+
+    <input type="email" id="email" placeholder="Email">
+
+    <select id="doctor">
+        <option value="500">Dr. Ravi - General Physician ₹500</option>
+        <option value="700">Dr. Priya - Cardiologist ₹700</option>
+        <option value="600">Dr. Anil - Dermatologist ₹600</option>
+    </select>
+
+    <input type="date" id="date">
+
+    <input type="time" id="time">
+
+    <button onclick="bookAppointment()">Book Appointment</button>
+```
